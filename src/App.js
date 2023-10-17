@@ -20,6 +20,15 @@ if (tomatoes === 0) {
   displayText = `${tomatoes} tomato!!`;
 } else if (tomatoes < -1) {
   displayText =`${tomatoes} tomatoes!!`;
+}
+  else if (tomatoes % 4 === 0) {
+    displayText = (
+      <h4>
+        <span>{tomatoString}</span>
+        <br />
+        <span>Time to take a long break! You earned it!</span>
+      </h4>
+    );
 } else {
   displayText = tomatoString;
 }
@@ -31,12 +40,12 @@ if (tomatoes === 0) {
   return (
     <div className="App">
       <div className='window'>
-        <h2>Tomato Counter</h2>
+        <h1>Tomato Counter</h1>
         <h4>A simple React counter app with useState</h4>
         <div className='tomato-box'>
-          <h1>
+          <h2>
           {displayText}
-          </h1>
+          </h2>
         </div>
         <div className='buttons-container'>
           <div 
