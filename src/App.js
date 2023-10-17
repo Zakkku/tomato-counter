@@ -13,6 +13,20 @@ function App() {
 
   const tomatoString = tomatoImages.join('');
 
+  let displayText;
+if (tomatoes === 0) {
+  displayText = 'No tomatoes yet';
+} else if (tomatoes === -1) {
+  displayText = `${tomatoes} tomato!!`;
+} else if (tomatoes < -1) {
+  displayText =`${tomatoes} tomatoes!!`;
+} else {
+  displayText = tomatoString;
+}
+
+
+
+
 
   return (
     <div className="App">
@@ -21,7 +35,7 @@ function App() {
         <h4>A simple React counter app with useState</h4>
         <div className='tomato-box'>
           <h1>
-            {tomatoString}
+          {displayText}
           </h1>
         </div>
         <div className='buttons-container'>
