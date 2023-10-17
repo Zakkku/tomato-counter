@@ -25,6 +25,14 @@
   align-items: center;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 0;
+}
+
 .tomato-box {
   display: flex;
   border-radius: 10%;

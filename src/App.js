@@ -5,7 +5,8 @@ function App() {
   return (
     <div className="App">
       <div className='window'>
-        <h2>Tomato Counter App</h2>
+        <h2>Tomato Counter</h2>
+        <h4>A simple React counter app with useState</h4>
         <div className='tomato-box'>
           <h1>0</h1>
         </div>
