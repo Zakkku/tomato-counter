@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import TomatoBox from './TomatoBox';
 import ButtonContainer from './ButtonContainer';
+import Header from './Header';
 
 function App() {
 
@@ -14,10 +15,9 @@ function App() {
   return (
     <div className="App">
       <div className='window'>
-        <h1>Pomodoro Tomato Counter</h1>
-        <h4>A simple React counter app with useState</h4>
+        < Header />
         < TomatoBox tomatoes={tomatoes}/>
-       < ButtonContainer tomatoes={tomatoes} setTomatoes={setTomatoes} />
+        < ButtonContainer tomatoes={tomatoes} setTomatoes={setTomatoes} />
       </div>
     </div>
   );
